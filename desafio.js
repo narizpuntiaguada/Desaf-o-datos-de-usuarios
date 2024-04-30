@@ -1,11 +1,10 @@
-// primero dejar en una variable la url de la API
+
 const url ="https://randomuser.me/api/?results=10"
 
-// crear funcion para consumir la API asincroma con fech try catch
-const getUsers = async () => {
-    // hacer peticion a la API
 
-// el fetch devuelve una promesa y el await espera a que la promesa se "resolve o reject"
+const getUsers = async () => {
+  
+
     const response = await fetch (url)
     console.log(response)
 if(response.ok ===true){
